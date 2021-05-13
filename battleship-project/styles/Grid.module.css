@@ -1,0 +1,25 @@
+.gridsq {
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: black;
+    background-color: #add8e6;
+    margin: auto;
+    text-align: center;
+}
+
+.gridsq:hover {
+    background-color: aquamarine;
+}
+
+.field {
+    width: 500px;
+    height: 500px;
+    border-color: black;
+    background-color: blue;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap
+
+}
