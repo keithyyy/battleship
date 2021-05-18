@@ -17,12 +17,10 @@
   align-items: center;
 }
 
-.field {
-  width: 500px;
-  height: 500px;
-  border-color: black;
-  background-color: blue;
-  margin: 10px
+/* this is keeping the battlefields side by side */
+.fieldContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
