@@ -1,0 +1,34 @@
+.battleshipWrap {
+    height: 50px;
+    width: 200px;
+    background-color: salmon;
+    border-radius: 10px;
+}
+
+.aircraftWrap {
+    height: 50px;
+    width: 200px;
+    background-color: seagreen;
+    border-radius: 10px;
+}
+
+.submarineWrap {
+    height: 50px;
+    width: 150px;
+    background-color: slateblue;
+    border-radius: 10px;
+}
+
+.smallShipWrap {
+    height: 50px;
+    width: 100px;
+    background-color: tan;
+    border-radius: 10px;
+}
+
+.destroyerWrap {
+    height: 50px;
+    width: 250px;
+    background-color: turquoise;
+    border-radius: 10px;
+}
