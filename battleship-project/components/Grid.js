@@ -7,10 +7,19 @@ const Grid = () => {
     
 
     let row = []
-    const width = 10
+    let xAxis = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K"]
+    let yAxis= ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    const dimension = 10
 
-    for (let i = 0; i < width*width; i++) {
-        row.push(<Gridsquare/>)
+
+    const onClick = (e) => {
+        console.log(e)
+    }
+
+    for (let i = 0; i < dimension; i++) {
+        for (let j = 0; j < dimension; j++) {
+            row.push(<Gridsquare dataX={xAxis[i]} dataY={yAxis[j]} onClick={onClick}/>)
+        }    
     }
 
 
