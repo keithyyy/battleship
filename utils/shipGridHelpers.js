@@ -153,6 +153,7 @@ const isOccupied = (grid, row, col, rotated, ships, currentShip) => {
       return grid;
     };
     
+    // A function to update the classes of the squares being affected
     const classUpdate = square => {
       let classes = "grid-square ";
       if (square.status === "occupied" && square.hover) {

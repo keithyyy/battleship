@@ -1,3 +1,4 @@
+// Dictionary for grid system
 const dictionary = {
   0: null,
   1: "A",
@@ -12,6 +13,7 @@ const dictionary = {
   10: "J"
 }
 
+// A function to update the grid when it's beind hovered over
 const hoverUpdate = ({ grid, row, col, rotated, type }) => {
   const bool = type === "enter" ? true : false;
   const position = grid[row][col];
@@ -19,6 +21,7 @@ const hoverUpdate = ({ grid, row, col, rotated, type }) => {
   return grid;
 };
 
+// A function to tell the application that a ship has been sunk if each position has been hit
 const isSunk = (ship, row, col) => {
   let sunk = true;
   if (!ship) return false;
@@ -30,6 +33,7 @@ const isSunk = (ship, row, col) => {
   return sunk;
 }
 
+// A function to get the index of an opponent's ship
 const getOpponentShipIdx = (opponent, row, col) => {
   let idx = 0;
   for (let i = 0; i < opponent.ships.length; i++) {
@@ -40,6 +44,7 @@ const getOpponentShipIdx = (opponent, row, col) => {
   return idx; 
 }
 
+// A function that allows a player to target certain squares to attempt to sink the opponent's ships
 const placeMove = ({ grid, row, col, rotated, player, opponent }) => {
   if (grid[row][col].status !== "empty") {
     return null
@@ -81,6 +86,7 @@ const placeMove = ({ grid, row, col, rotated, player, opponent }) => {
   } 
 };
 
+// A function that updates the classes of the squares being affected
 const classUpdate = square => {
   let classes = "grid-square ";
   if (square.status !== "empty" && square.hover) {
