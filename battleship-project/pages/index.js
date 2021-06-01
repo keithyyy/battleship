@@ -9,7 +9,7 @@ import Destroyer from '../components/ships/Destroyer'
 import styles from '../styles/Home.module.css'
 import Grid from '../components/Grid'
 import GridOpp from '../components/GridOpp'
-// import '../styles/Grid.module.css'
+
 
 export default function Home() {
   return (
