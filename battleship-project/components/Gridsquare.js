@@ -12,6 +12,7 @@ const Gridsquare = ({dataX, dataY, logCoord}) => {
     return (
         <div className={styles.gridsq} dataX={dataX} onClick={() => onClick(dataX, dataY)}>
             <p >{dataX}{dataY}</p>
+
         </div>
     )
 }
