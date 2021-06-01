@@ -26,8 +26,9 @@ const Grid = () => {
 
 
 
-    const onClick = (e) => {
-        console.log(e)
+    const onClick = (x,y) => {
+        let coord = x+=y
+        console.log(coord + " from the grid.js")
     }
 
     for (let i = 0; i < dimension; i++) {
