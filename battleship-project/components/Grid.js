@@ -16,12 +16,14 @@ const dictionary = {
     10: "J"
   };
 
+
 const Grid = () => {
 
     let row = []
     let xAxis = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K"]
     let yAxis= ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     const dimension = 10
+
 
 
     const onClick = (e) => {
